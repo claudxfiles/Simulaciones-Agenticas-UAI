@@ -9,13 +9,21 @@ requiere pypdf) y carga cada chunk con metadata {fuente, fecha, seccion}.
 """
 from __future__ import annotations
 
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 from app.infrastructure.rag.retriever import get_collection
 
-_DOCS_DIR = Path(__file__).parent.parent.parent.parent.parent / "docs-negocio"
+# Local (fuera de Docker): orchestrator/app/infrastructure/rag/ingest.py -> 5
+# parents hasta la raíz del repo. Dentro del contenedor: /srv/app/... -> 4
+# parents hasta /srv, donde el Dockerfile copia docs-negocio/. DOCS_DIR
+# sobreescribe ambos casos si hace falta.
+_DEFAULT_DOCS_DIR = Path(__file__).parent.parent.parent.parent.parent / "docs-negocio"
+if not _DEFAULT_DOCS_DIR.is_dir():
+    _DEFAULT_DOCS_DIR = Path(__file__).parent.parent.parent.parent / "docs-negocio"
+_DOCS_DIR = Path(os.environ.get("DOCS_DIR", str(_DEFAULT_DOCS_DIR)))
 _CHUNK_SIZE = 800
 _CHUNK_OVERLAP = 150
 

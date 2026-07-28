@@ -17,6 +17,12 @@ spec:
       labels:
         app: {{ .Chart.Name }}
     spec:
+      # El contenedor corre como uid 10001 (usuario "agent", ver Dockerfile).
+      # Los PVC montan con owner root:root por defecto en GKE; fsGroup hace
+      # que el volumen se monte con ese grupo, dando permiso de escritura
+      # sin correr el proceso como root.
+      securityContext:
+        fsGroup: 999
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

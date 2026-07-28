@@ -5,7 +5,8 @@ replicaCount: 1
 image:
   repository: us-central1-docker.pkg.dev/capstone-mia-1/mad-agents/orchestrator
   tag: latest
-  pullPolicy: IfNotPresent
+  # Always: con tag "latest" el nodo no debe reusar cache local entre deploys.
+  pullPolicy: Always
 
 service:
   type: ClusterIP

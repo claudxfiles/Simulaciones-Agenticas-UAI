@@ -6,10 +6,13 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /srv
 
-COPY pyproject.toml ./
+# Build context = raíz del repo (para poder copiar docs-negocio/, que vive
+# un nivel arriba de este Dockerfile): docker build -f orchestrator/Dockerfile .
+COPY orchestrator/pyproject.toml ./
 RUN pip install --no-cache-dir uv && uv pip install --system -r pyproject.toml
 
-COPY app ./app
+COPY orchestrator/app ./app
+COPY docs-negocio ./docs-negocio
 
 # Directorios de datos con permisos de escritura para el usuario sin privilegios
 RUN mkdir -p /srv/chroma_data /srv/data && \

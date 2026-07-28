@@ -34,6 +34,57 @@ const AGENT_LABELS = {
   buscar_en_documentos: 'rag',
 }
 
+function escapeHtml(text) {
+  const div = document.createElement('div')
+  div.textContent = text
+  return div.innerHTML
+}
+
+// Renderer de markdown mínimo (sin dependencias): negrita, listas
+// numeradas/con guión, párrafos. Suficiente para las respuestas del
+// orquestador (texto + listas), no un parser completo de markdown.
+function renderMarkdown(text) {
+  const escaped = escapeHtml(text)
+  const lines = escaped.split('\n')
+  const htmlParts = []
+  let listBuffer = []
+  let listType = null // 'ol' | 'ul'
+
+  const flushList = () => {
+    if (listBuffer.length === 0) return
+    htmlParts.push(`<${listType}>${listBuffer.join('')}</${listType}>`)
+    listBuffer = []
+    listType = null
+  }
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim()
+    const numbered = line.match(/^(\d+)[.)]\s+(.*)/)
+    const bulleted = line.match(/^[-*]\s+(.*)/)
+
+    if (numbered) {
+      if (listType !== 'ol') flushList()
+      listType = 'ol'
+      listBuffer.push(`<li>${inlineMarkdown(numbered[2])}</li>`)
+    } else if (bulleted) {
+      if (listType !== 'ul') flushList()
+      listType = 'ul'
+      listBuffer.push(`<li>${inlineMarkdown(bulleted[1])}</li>`)
+    } else {
+      flushList()
+      if (line) htmlParts.push(`<p>${inlineMarkdown(line)}</p>`)
+    }
+  }
+  flushList()
+  return htmlParts.join('')
+}
+
+function inlineMarkdown(text) {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/`(.+?)`/g, '<code>$1</code>')
+}
+
 function appendMessage(role, text, { agentBadge, fiscalIssues } = {}) {
   const el = document.createElement('div')
   el.className = `chat-msg ${role}`
@@ -46,7 +97,14 @@ function appendMessage(role, text, { agentBadge, fiscalIssues } = {}) {
     el.appendChild(document.createElement('br'))
   }
 
-  el.appendChild(document.createTextNode(text))
+  if (role === 'assistant') {
+    const body = document.createElement('div')
+    body.className = 'chat-msg-body'
+    body.innerHTML = renderMarkdown(text)
+    el.appendChild(body)
+  } else {
+    el.appendChild(document.createTextNode(text))
+  }
 
   if (fiscalIssues && fiscalIssues.length > 0) {
     const warn = document.createElement('span')

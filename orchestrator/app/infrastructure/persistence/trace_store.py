@@ -37,12 +37,22 @@ _engine = None
 _SessionLocal = None
 
 
+def _sqlite_path(url: str) -> Path | None:
+    """Extrae el path de archivo de una URL sqlite:/// (relativa o absoluta),
+    o None si no es sqlite (ej: postgresql://...)."""
+    if url.startswith("sqlite:////"):
+        return Path("/" + url.removeprefix("sqlite:////"))
+    if url.startswith("sqlite:///"):
+        return Path(url.removeprefix("sqlite:///"))
+    return None
+
+
 def _get_engine():
     global _engine, _SessionLocal
     if _engine is None:
         settings = get_settings()
-        if settings.trace_db_url.startswith("sqlite:///./"):
-            db_path = Path(settings.trace_db_url.removeprefix("sqlite:///./"))
+        db_path = _sqlite_path(settings.trace_db_url)
+        if db_path is not None:
             db_path.parent.mkdir(parents=True, exist_ok=True)
         _engine = create_engine(settings.trace_db_url, future=True)
         Base.metadata.create_all(_engine)

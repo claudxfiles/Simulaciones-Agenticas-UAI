@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mad-agents-orchestrator
+description: Orquestador de agentes retail mad_market (FastAPI + LangGraph)
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

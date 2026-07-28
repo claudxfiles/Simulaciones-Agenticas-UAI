@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOULDREAM Agent — mad_market</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23ff6b1a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M24 6l18 10v16L24 42 6 32V16Z'/%3E%3Cpath d='M24 6v16l18 10' opacity='0.5'/%3E%3Cpath d='M24 22L6 32' opacity='0.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<div class="brand">
+  <svg class="brand-icon" viewBox="0 0 22 22" fill="none">
+    <polygon points="11,1 20,6 20,16 11,21 2,16 2,6" fill="none" stroke="#ff6b1a" stroke-width="1.5"/>
+    <polygon points="11,5 17,8.5 17,15.5 11,19 5,15.5 5,8.5" fill="#ff6b1a" opacity="0.15"/>
+  </svg>
+  <div class="brand-text">
+    <div class="brand-name">SOULDREAM <span>Agent</span></div>
+    <div class="brand-tagline">Sistema de agentes orquestados — mad_market</div>
+  </div>
+</div>
+
+<div class="tab-bar" id="tab-bar">
+  <button class="tab-btn active" data-tab="orchestrator">Agente Orquestador</button>
+  <button class="tab-btn" data-tab="agents">Agentes</button>
+  <button class="tab-btn" data-tab="docs">Documentos</button>
+  <button class="tab-btn" data-tab="trace">Trazabilidad</button>
+</div>
+
+<!-- Tab: Agente Orquestador -->
+<div class="tab-panel active" id="panel-orchestrator">
+  <div class="orchestrator-layout">
+
+    <section class="panel orchestrator-info">
+      <div class="info-eyebrow">03</div>
+      <h2 class="info-title">Agente Orquestador</h2>
+      <ul class="info-list">
+        <li><strong>Rol:</strong> asistente de mad_market, cadena de retail chilena multicanal. Recibe la pregunta del usuario y decide a qué agente delegarla.</li>
+        <li><strong>Tools / workers disponibles:</strong>
+          <ul class="info-sublist">
+            <li><code>consultar_ventas_mad_market</code> — sql_agent (SQLite vía MCP, solo lectura)</li>
+            <li><code>analizar_accion</code> — stock_agent (Yahoo Finance + LLM)</li>
+            <li><code>buscar_en_documentos</code> — RAG (Chroma, corpus de negocio)</li>
+          </ul>
+        </li>
+        <li><strong>Criterios de delegación:</strong> transaccional/analítico → sql_agent; acción bursátil/ticker → stock_agent; conceptual sobre el negocio → RAG. Si no calza con ninguna, lo dice en vez de inventar.</li>
+        <li><strong>Formato de salida:</strong> <code>{reply, tool_calls[], fiscal_issues[], blocked, latency_ms}</code> — ver <span class="info-mono">domain/models.py</span></li>
+      </ul>
+      <div class="info-footer">Guardrail de entrada → LLM+tools → Agente Fiscalizador (paso 05) → respuesta</div>
+    </section>
+
+    <section class="panel chat-panel">
+      <div id="chat-log" class="chat-log" aria-live="polite"></div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" class="chat-input" type="text"
+          placeholder="¿Qué cliente gastó más? ¿Cómo está AAPL? ¿Qué es mad_market?"
+          autocomplete="off" required />
+        <button type="submit" class="chat-submit">Enviar</button>
+      </form>
+      <ul class="example-list" id="example-list">
+        <li data-q="¿Qué cliente gastó más en total?">Cliente que más gastó</li>
+        <li data-q="¿Cuáles son los 3 productos más vendidos?">Top 3 productos</li>
+        <li data-q="¿Cómo está la acción de AAPL?">Análisis AAPL</li>
+        <li data-q="¿Qué barreras enfrentan las pymes chilenas para adoptar IA?">Barreras adopción IA pymes</li>
+      </ul>
+    </section>
+
+  </div>
+</div>
+
+<!-- Tab: Agentes -->
+<div class="tab-panel" id="panel-agents">
+  <div class="agents-container">
+    <div class="agents-header"><span class="agents-title">Agentes del sistema</span></div>
+    <div class="agents-grid" id="agents-grid"></div>
+  </div>
+</div>
+
+<!-- Tab: Documentos -->
+<div class="tab-panel" id="panel-docs">
+  <div class="docs-container">
+    <div class="agents-header"><span class="agents-title">Corpus de negocio (RAG)</span></div>
+    <div class="docs-list" id="docs-list">
+      <p class="body-muted">Cargando…</p>
+    </div>
+  </div>
+</div>
+
+<!-- Tab: Trazabilidad -->
+<div class="tab-panel" id="panel-trace">
+  <div class="trace-container">
+    <div class="agents-header">
+      <span class="agents-title">Interacciones recientes</span>
+      <button class="agents-demo-btn" id="trace-refresh">Actualizar</button>
+    </div>
+    <div class="trace-table-wrap">
+      <table class="trace-table" id="trace-table">
+        <thead>
+          <tr><th>Hora</th><th>Pregunta</th><th>Agente</th><th>Latencia</th><th>Fiscal</th></tr>
+        </thead>
+        <tbody id="trace-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

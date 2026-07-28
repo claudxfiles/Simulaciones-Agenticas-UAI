@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}
+  labels:
+    app: {{ .Chart.Name }}
+spec:
+  # replicas fijo en 1: Chroma/SQLite persisten en PVC ReadWriteOnce, no
+  # escalable horizontalmente sin migrar a Postgres+pgvector o un Chroma
+  # server aparte (ver REPORTE.md, "mejoras pendientes").
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.service.targetPort }}
+          env:
+            {{- range $key, $value := .Values.env }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+            {{- end }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.secretName }}
+          volumeMounts:
+            - name: chroma-data
+              mountPath: /srv/chroma_data
+            - name: trace-data
+              mountPath: /srv/data
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+          livenessProbe:
+            httpGet: { path: /health, port: {{ .Values.service.targetPort }} }
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          readinessProbe:
+            httpGet: { path: /health, port: {{ .Values.service.targetPort }} }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+      volumes:
+        - name: chroma-data
+          {{- if .Values.persistence.chroma.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-chroma-data
+          {{- else }}
+          emptyDir: {}
+          {{- end }}
+        - name: trace-data
+          {{- if .Values.persistence.data.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ .Chart.Name }}-trace-data
+          {{- else }}
+          emptyDir: {}
+          {{- end }}

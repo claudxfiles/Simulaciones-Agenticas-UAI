@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mad-agents-frontend
+description: SPA de chat para el orquestador de agentes mad_market
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

@@ -1,0 +1,47 @@
+# Crear values-prod.yaml con overrides reales y desplegar con:
+#   helm upgrade --install orchestrator ./k8s/orchestrator-chart -f values-prod.yaml
+replicaCount: 1
+
+image:
+  repository: us-central1-docker.pkg.dev/capstone-mia-1/mad-agents/orchestrator
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000
+
+ingress:
+  enabled: false
+  className: gce
+  host: mad-agents.example.com
+  path: /api
+  pathType: Prefix
+
+resources:
+  requests: { cpu: 200m, memory: 512Mi }
+  limits: { cpu: "1", memory: 1Gi }
+
+# Config no sensible → env vars planas.
+env:
+  APP_ENV: production
+  LLM_PROVIDER: anthropic
+  LLM_MODEL: claude-sonnet-5
+  CHROMA_PERSIST_DIR: /srv/chroma_data
+  TRACE_DB_URL: sqlite:////srv/data/interactions.db
+
+# Secretos → Secret de k8s (crear aparte o vía CI):
+#   kubectl create secret generic orchestrator-secrets \
+#     --from-literal=LLM_API_KEY=... --from-literal=OPENAI_API_KEY=...
+secretName: orchestrator-secrets
+
+persistence:
+  chroma:
+    enabled: true
+    size: 1Gi
+    storageClassName: standard-rwo
+  data:
+    enabled: true
+    size: 1Gi
+    storageClassName: standard-rwo

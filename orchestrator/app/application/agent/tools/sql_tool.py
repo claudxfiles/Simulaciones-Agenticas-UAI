@@ -111,7 +111,7 @@ async def _consultar_async(pregunta: str) -> str:
     parametros = StdioServerParameters(
         command="python", args=[str(_SERVIDOR)], cwd=str(_MCP_DIR),
     )
-    client = AsyncOpenAI(api_key=settings.openai_api_key)
+    client = AsyncOpenAI(api_key=settings.openai_api_key, base_url=settings.openai_base_url)
 
     async with stdio_client(parametros) as (lectura, escritura):
         async with ClientSession(lectura, escritura) as session:

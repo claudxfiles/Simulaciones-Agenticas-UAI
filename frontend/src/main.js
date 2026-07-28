@@ -19,7 +19,14 @@ const chatInput = document.getElementById('chat-input')
 const submitBtn = chatForm.querySelector('.chat-submit')
 const exampleList = document.getElementById('example-list')
 
-const sessionId = crypto.randomUUID()
+// crypto.randomUUID() requiere secure context (HTTPS/localhost); esta app
+// se sirve por HTTP plano detrás del LB (sin dominio/TLS todavía), así que
+// se genera el id sin depender de eso.
+function generateSessionId() {
+  if (window.crypto?.randomUUID) return window.crypto.randomUUID()
+  return 'sess-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10)
+}
+const sessionId = generateSessionId()
 
 const AGENT_LABELS = {
   consultar_ventas_mad_market: 'sql_agent',

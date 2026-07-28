@@ -1,0 +1,33 @@
+# Ingress único compartido: un solo Google Cloud Load Balancer (una sola IP
+# externa, un solo costo fijo) enrutando ambos servicios por path.
+# /api/* -> orchestrator, todo lo demás -> frontend.
+#
+# Se mantiene fuera de los charts individuales (a diferencia de
+# k8s/*-chart/templates/ingress.yaml, que quedan deshabilitados por defecto
+# y sirven para el caso de exponer cada servicio con su propio dominio/LB)
+# porque GCE crea un LB nuevo por cada recurso Ingress: para compartir IP
+# entre frontend y orchestrator hace falta uno solo con ambos paths.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mad-agents
+  annotations:
+    kubernetes.io/ingress.class: gce
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: mad-agents-orchestrator
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: mad-agents-frontend
+                port:
+                  number: 80

@@ -7,8 +7,13 @@ metadata:
     kubernetes.io/ingress.class: {{ .Values.ingress.className }}
 spec:
   rules:
+    # Sin host: sirve por la IP pública del LB, sin depender de un dominio propio.
+    {{- if .Values.ingress.host }}
     - host: {{ .Values.ingress.host | quote }}
       http:
+    {{- else }}
+    - http:
+    {{- end }}
         paths:
           - path: {{ .Values.ingress.path }}
             pathType: {{ .Values.ingress.pathType }}

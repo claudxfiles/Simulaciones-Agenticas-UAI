@@ -32,8 +32,12 @@ class Settings(BaseSettings):
     # Guardrails
     guardrail_max_input_chars: int = 4000
 
-    # Agentes worker (sql_agent y stock_agent llaman OpenAI directo)
+    # Agentes worker (sql_agent y stock_agent llaman un endpoint
+    # OpenAI-compatible directo). openai_base_url permite apuntar a
+    # DeepSeek/OpenRouter/etc en vez de OpenAI real.
     openai_api_key: str = ""
+    openai_base_url: str | None = None
+    openai_model: str = "gpt-4o-mini"
 
     # RAG
     chroma_persist_dir: str = "./chroma_data"

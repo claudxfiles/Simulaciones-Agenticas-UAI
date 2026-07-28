@@ -1,0 +1,183 @@
+Casos de uso concretos de automatización con Agentes de IA en PYMEs chilenas
+================================================================================
+
+Introducción
+------------
+
+Chile se ha posicionado como uno de los países líderes en adopción de inteligencia
+artificial (IA) en América Latina, tanto por el desarrollo de instituciones como
+el Centro Nacional de Inteligencia Artificial (CENIA) como por la proliferación de
+empresas de software chilenas (Defontana, Toku, Xepelin, Rankmi, Haulmer, Bsale,
+entre otras) que han incorporado funcionalidades de IA y automatización en sus
+plataformas dirigidas a pequeñas y medianas empresas (PYMEs). A esto se suma un
+ecosistema de políticas públicas -impulsadas por CORFO, SERCOTEC, SOFOFA y el
+Gobierno de Chile- orientadas a acelerar la adopción de estas tecnologías entre
+las mipymes del país.
+
+Este documento reúne casos de uso concretos y documentados, con fuente verificable,
+de automatización de procesos mediante IA (o agentes de IA) aplicados o dirigidos
+al segmento PYME en Chile. Se excluyen deliberadamente cifras o casos que no
+pudieron respaldarse con una fuente pública real. El objetivo es servir como
+insumo para un corpus académico sobre agentes de IA aplicados a la automatización
+de procesos en PYMEs chilenas.
+
+Caso 1: Defontana CRM con IA para ventas, marketing y postventa
+-----------------------------------------------------------------
+
+Defontana, empresa chilena de software de gestión empresarial (ERP) con más de
+14.000 clientes en el país, lanzó en marzo de 2025 un sistema de CRM (Customer
+Relationship Management) con funcionalidades de inteligencia artificial pensado
+específicamente para PYMEs. La herramienta permite centralizar y automatizar
+procesos comerciales: incluye una función gratuita de IA que transcribe
+automáticamente reuniones realizadas en plataformas como Microsoft Teams, genera
+un resumen con los puntos más relevantes de la conversación y entrega una
+estimación sobre la probabilidad de cierre del negocio. Según la compañía, el
+sistema puede configurarse e implementarse en aproximadamente media hora, sin
+necesidad de un consultor especializado, con el objetivo declarado de llegar a
+cerca de 5.000 PYMEs en Latinoamérica a partir de su base de clientes en Chile.
+
+Fuente: "Defontana crea sistema chileno con IA que automatiza procesos de venta,
+marketing y post venta de las Pymes", Portal Agro Chile, marzo de 2025.
+https://www.portalagrochile.cl/2025/03/17/defontana-crea-sistema-chileno-con-ia-que-automatiza-procesos-de-venta-marketing-y-post-venta-de-las-pymes/
+
+Caso 2: Xepelin - IA aplicada a financiamiento y gestión de cobros y pagos de PYMEs
+--------------------------------------------------------------------------------------
+
+Xepelin es una fintech de origen chileno enfocada en financiamiento y gestión
+financiera para PYMEs, que declara dar servicio a más de 60.000 empresas en la
+región. La compañía desarrolló un software propio de gestión de clientes basado
+en inteligencia artificial para mejorar la eficiencia operativa en el
+otorgamiento de financiamiento a pequeñas y medianas empresas, evaluar riesgos
+crediticios y agilizar la toma de decisiones. De acuerdo con la cobertura de
+prensa, esta plataforma interna de IA permitió a la empresa reducir en más de
+USD 200.000 el gasto anual en herramientas externas. Por este desarrollo,
+Xepelin obtuvo el premio de plata en la categoría Inteligencia Artificial de los
+Fintech América Awards 2026, certamen que evaluó más de 360 postulaciones de 18
+países.
+
+Fuente: "Xepelin obtiene reconocimiento en Fintech Américas por uso de
+inteligencia artificial en financiamiento a pymes", Portal Innova, abril de 2026.
+https://portalinnova.cl/xepelin-obtiene-reconocimiento-en-fintech-americas-por-uso-de-inteligencia-artificial-en-financiamiento-a-pymes/
+
+Caso 3: Toku - agente de IA para automatizar la cobranza empresarial
+------------------------------------------------------------------------
+
+Toku, fintech chilena especializada en la relación de pago entre empresas y sus
+clientes (categoría que la propia compañía denomina "Payment Relationship
+Management"), lanzó en marzo de 2026 un agente de inteligencia artificial que se
+integra a los sistemas ERP y CRM de sus clientes para decidir de forma autónoma
+cómo, cuándo y por qué canal (correo, WhatsApp o llamada de voz) contactar a cada
+cliente moroso, e incluso proponer reprogramaciones de pago. Según Diario
+Financiero, el desarrollo tomó nueve meses e incluyó una fase beta con empresas
+del rubro asegurador y de crédito, entre ellas Chevrolet, Mapfre y BICE Vida. Los
+resultados reportados por la empresa muestran una reducción de hasta un 50% en
+la deuda incobrable, y una recuperación del 75% de las carteras vencidas a los 20
+días, frente a un 60% sin el uso del agente. Toku ha levantado cerca de USD 48
+millones en financiamiento y opera en Chile, México y Brasil.
+
+Fuente: "Toku lanza agente de inteligencia artificial para automatizar la
+cobranza de empresas", Diario Financiero (df.cl), marzo de 2026.
+https://www.df.cl/df-lab/innovacion-y-startups/toku-lanza-agente-de-inteligencia-artificial-para-automatizar-la-cobranza
+
+Caso 4: Rankmi Genius - IA aplicada a la gestión de personas
+------------------------------------------------------------------
+
+Rankmi es una plataforma chilena de recursos humanos, nacida al alero de
+Start-Up Chile, que hoy opera en Chile, México, Perú, Colombia y Argentina con
+más de 200 personas en su equipo. La compañía lanzó "Rankmi Genius", un
+ecosistema de soluciones de IA orientado a automatizar tareas del área de
+personas: "Clima Insight" analiza miles de respuestas abiertas de encuestas de
+clima laboral mediante análisis de sentimiento; "Desempeño Insight" genera
+informes automáticos de evaluaciones de desempeño con planes de desarrollo
+personalizados; y "Action Genius" crea automáticamente planes de acción a partir
+de los resultados de las encuestas. Si bien la herramienta está pensada para
+empresas de distintos tamaños -incluidas grandes compañías latinoamericanas-,
+ejemplifica cómo un proveedor de software chileno está incorporando agentes de
+IA para automatizar procesos de gestión que antes eran manuales, un patrón
+replicable en PYMEs que usan la plataforma.
+
+Fuente: "Rankmi Genius: soluciones basadas en IA que potencian los procesos de
+HR", Rankmi Blog. https://www.rankmi.com/blog/rankmi-genius-soluciones-ia
+
+Caso 5: Programa "Hazlo con IA" - capacitación estatal en IA generativa para mipymes
+------------------------------------------------------------------------------------------
+
+"Hazlo con IA" es una iniciativa público-privada coordinada por los ministerios
+de Economía, del Trabajo y de Ciencia y Tecnología, junto a SOFOFA, SENCE, CENIA
+y Futuro del Trabajo SOFOFA Capital Humano, con apoyo de Google.org. El programa
+ofrece cursos 100% online y gratuitos de alfabetización en IA generativa, sin
+requisitos previos, estructurados en rutas de aprendizaje personalizadas de siete
+cursos (incluyendo módulos de alfabetización digital, ingeniería de prompts y
+uso responsable de la IA). Está dirigido a trabajadores de micro, pequeñas y
+medianas empresas de todo Chile, además de funcionarios públicos, y contempla
+capacitar a 68.000 personas. El programa se sustenta en un estudio de CENIA que
+determinó que un 48% de las tareas de las 100 ocupaciones más comunes del país
+podría acelerarse mediante IA generativa.
+
+Fuente: "Proyecto Hazlo con IA lanza 68 mil capacitaciones gratuitas en IAGen
+para mipymes de todo el país", CENIA, agosto de 2025.
+https://cenia.cl/2025/08/12/proyecto-hazlo-con-ia-lanza-68-mil-capacitaciones-gratuitas-en-iagen-para-mipymes-de-todo-el-pais/
+
+Caso 6: Estudio CENIA - SOFOFA sobre el potencial de la IA generativa en el trabajo chileno
+-----------------------------------------------------------------------------------------------
+
+CENIA, en conjunto con Futuro del Trabajo SOFOFA Capital Humano, académicos de la
+Universidad de Stanford, el Ministerio del Trabajo y Previsión Social y SENCE,
+publicó el estudio "Inteligencia Artificial Generativa: Oportunidades para el
+Futuro del Trabajo en Chile". La investigación evaluó más de 200.000 tareas en
+las 100 ocupaciones más comunes del país (cerca de 6 millones de trabajadores,
+equivalentes al 62% de la fuerza laboral) y concluyó que el valor bruto potencial
+de la oportunidad de aceleración con IA generativa en esos empleos equivale a
+casi un 12% del PIB de Chile. Aunque la cifra no está desagregada exclusivamente
+para PYMEs, el estudio es la base técnica que sustenta las políticas públicas de
+fomento a la adopción de IA en el segmento mipyme, como el programa "Hazlo con
+IA" descrito en el caso anterior.
+
+Fuente: "Inteligencia Artificial Generativa: Oportunidades para el Futuro del
+Trabajo en Chile", CENIA / Futuro del Trabajo SOFOFA Capital Humano.
+https://futurodeltrabajo.cenia.cl/
+
+Conclusión
+----------
+
+Los casos reunidos muestran que, en Chile, la automatización con IA en PYMEs no es
+un fenómeno hipotético sino un proceso en marcha, impulsado principalmente por
+proveedores locales de software (Defontana, Toku, Xepelin, Rankmi) que han
+incorporado agentes de IA a funciones críticas para una PYME: ventas y postventa,
+cobranza, financiamiento y gestión de personas. A este esfuerzo privado se suma un
+componente estatal relevante, materializado en programas de capacitación masiva
+como "Hazlo con IA" y en estudios técnicos de CENIA y SOFOFA que dimensionan el
+potencial económico de esta transición. Un patrón común en los casos revisados es
+que la automatización se concentra en tareas repetitivas y de alto volumen -
+transcribir reuniones, contactar deudores, evaluar riesgo crediticio, analizar
+encuestas- delegadas a agentes de IA que operan con supervisión humana. Para un
+proyecto de agente RAG orientado a este dominio, estos casos ofrecen ejemplos
+verificables de procesos, actores y resultados reportados, evitando cifras o
+implementaciones no respaldadas por fuentes públicas.
+
+Fuentes
+-------
+
+1. Portal Agro Chile (2025). "Defontana crea sistema chileno con IA que
+   automatiza procesos de venta, marketing y post venta de las Pymes".
+   https://www.portalagrochile.cl/2025/03/17/defontana-crea-sistema-chileno-con-ia-que-automatiza-procesos-de-venta-marketing-y-post-venta-de-las-pymes/
+
+2. Portal Innova (2026). "Xepelin obtiene reconocimiento en Fintech Américas por
+   uso de inteligencia artificial en financiamiento a pymes".
+   https://portalinnova.cl/xepelin-obtiene-reconocimiento-en-fintech-americas-por-uso-de-inteligencia-artificial-en-financiamiento-a-pymes/
+
+3. Diario Financiero - df.cl (2026). "Toku lanza agente de inteligencia
+   artificial para automatizar la cobranza de empresas".
+   https://www.df.cl/df-lab/innovacion-y-startups/toku-lanza-agente-de-inteligencia-artificial-para-automatizar-la-cobranza
+
+4. Rankmi Blog. "Rankmi Genius: soluciones basadas en IA que potencian los
+   procesos de HR".
+   https://www.rankmi.com/blog/rankmi-genius-soluciones-ia
+
+5. CENIA (2025). "Proyecto Hazlo con IA lanza 68 mil capacitaciones gratuitas en
+   IAGen para mipymes de todo el país".
+   https://cenia.cl/2025/08/12/proyecto-hazlo-con-ia-lanza-68-mil-capacitaciones-gratuitas-en-iagen-para-mipymes-de-todo-el-pais/
+
+6. CENIA / Futuro del Trabajo SOFOFA Capital Humano. "Inteligencia Artificial
+   Generativa: Oportunidades para el Futuro del Trabajo en Chile".
+   https://futurodeltrabajo.cenia.cl/

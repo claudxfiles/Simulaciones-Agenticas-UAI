@@ -1,0 +1,175 @@
+Estado actual de adopción de IA y automatización en PYMEs chilenas
+====================================================================
+
+1. Introducción
+----------------
+Este documento describe el panorama general de las pequeñas y medianas empresas
+(PYMEs) en Chile y el nivel actual de adopción de inteligencia artificial (IA) y
+automatización de procesos en ese segmento, como punto de partida de un corpus
+de referencia para un agente conversacional (RAG) sobre el tema. Reúne
+únicamente datos verificables, con fuente pública citada, evitando cifras que no
+pudieron respaldarse.
+
+2. El peso de las PYMEs en la economía chilena
+------------------------------------------------
+Según cifras del Banco Central a mayo de 2025, existían 759.320 PYMEs activas
+en Chile, que en conjunto con las microempresas (cerca de 2 millones adicionales)
+representan el 98,3% del tejido empresarial del país. Más de 6,4 millones de
+personas trabajan en MiPymes, generando el 46,8% de los empleos dependientes
+formales y el 58,6% de los honorarios (trabajo independiente). Sin embargo, y
+pese a su peso en número de empresas y empleo, las PYMEs generan solo un 11,7%
+de las ventas totales del país, según datos del Servicio de Impuestos Internos
+(SII) de 2023, lo que evidencia una brecha de productividad relevante frente a
+las grandes empresas.
+
+Fuente: "Pymes en cifras: cuántas hay en Chile, cuánta venta generan y en qué
+regiones les va mejor", La Tercera (con datos del Banco Central, mayo de 2025,
+y el SII, 2023).
+https://www.latercera.com/tendencias/noticia/pymes-en-cifras-cuantas-hay-en-chile-cuanta-venta-generan-y-en-que-regiones-les-va-mejor/
+
+3. Nivel de adopción declarada de IA
+---------------------------------------
+El estudio de adopción de IA en Chile realizado por Entel Digital junto al
+Centro Nacional de Inteligencia Artificial (CENIA) en 2025 -con el respaldo de
+ACTI, SOFOFA y universidades chilenas, sobre una muestra de más de 526
+propietarios, directores y gerentes de empresas a nivel nacional- encontró que
+un 93% de los líderes empresariales considera que la IA tendrá un impacto
+positivo en su empresa. En cuanto a adopción efectiva, un 70% de las PYMEs
+declara haber incorporado IA de alguna forma, frente a más de un 80% en las
+grandes empresas. La adopción es mayor en la Región Metropolitana (sobre 80%)
+que en regiones (60%), lo que evidencia una brecha territorial adicional a la
+brecha por tamaño de empresa. El mismo estudio precisa que la adopción
+declarada no equivale a madurez: solo una fracción de las empresas que usa IA
+lo hace con un enfoque "transformador" (integrada a procesos clave que
+redefinen su modelo de negocio); el resto se concentra en usos de productividad
+incremental.
+
+Fuente: "IA en Chile: Crece su uso en empresas, pero falta capacitación digital
+laboral", Entel Digital / CENIA, 2025.
+https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+
+4. Heterogeneidad entre estudios de adopción
+-----------------------------------------------
+Distintas encuestas privadas arrojan cifras dispares sobre el porcentaje de
+empresas chilenas que usa IA, lo que refleja diferencias de muestra, momento de
+medición y definición de "uso de IA" (desde chatbots básicos hasta IA integrada
+en procesos críticos):
+
+- Encuesta IA Defontana 2025 (más de mil empresas de Chile y Latinoamérica, con
+  un 61% de pequeñas empresas en la muestra chilena de 154 compañías): 45% ya
+  utiliza herramientas de IA, pero solo 23% se considera plenamente preparada
+  para integrarlas de forma sostenible.
+  https://www.emol.com/noticias/Economia/2025/10/23/1181305/empresas-uso-inteligencia-artificial.html
+
+- Estudio Deloitte "ConvergencIA" 2025 en Chile: 83% de las empresas ya utiliza
+  IA en sus procesos y 80% cuenta con presupuesto definido para esta tecnología.
+  https://portalinnova.cl/estudio-de-deloitte-revela-que-83-de-las-empresas-en-chile-ya-utiliza-inteligencia-artificial-y-80-tiene-un-presupuesto-definido/
+
+- Encuesta SONDA Tech Trends (diciembre de 2025): solo 15,8% de las empresas en
+  Chile declara usar IA de forma activa, mientras un 41,7% está evaluando su
+  incorporación.
+  https://www.sonda.com/detalle-noticia/2025/12/22/sonda-tech-trends--solo-el-15-8--de-las-empresas-en-chile-utiliza-inteligencia-artificial-de-forma-activa
+
+- Radar Emprendedor 2025 (Corporación G100 y consultora Criteria, más de 300
+  emprendedores a nivel nacional): 48% de los emprendedores ya integró
+  herramientas de IA en sus operaciones, con mayor adopción entre mujeres
+  emprendedoras y una brecha etaria marcada (solo 27% de los emprendedores
+  mayores de 50 años ha incorporado IA).
+  https://www.latercera.com/emprendimiento/noticia/radiografia-del-emprendedor-en-chile-2025-inteligencia-artificial-desafios-economicos-y-nuevas-motivaciones/
+
+5. Brecha entre digitalización básica y automatización avanzada
+--------------------------------------------------------------------
+El estudio de Mauricio Castillo-Vergara (Universidad Alberto Hurtado),
+publicado en Observatorio Económico (N° 202, 2025) sobre una muestra de 536
+empresas, muestra un patrón consistente con las cifras anteriores: alta
+penetración de herramientas digitales básicas (sitios web, banca digital) pero
+incorporación aún incipiente de tecnologías de Industria 4.0 más avanzadas como
+IA, impresión 3D y robótica, explicada en parte por la escasez de capital
+humano calificado y el acceso limitado a financiamiento dentro de las propias
+PYMEs.
+
+Fuente: Castillo-Vergara, M. (2025). "Pymes e Industria 4.0 en Chile: una
+brecha entre la incorporación de herramientas básicas y tecnologías
+avanzadas". Observatorio Económico, N° 202, Universidad Alberto Hurtado.
+https://www.observatorioeconomico.cl/index.php/oe/article/view/592
+
+6. Respuesta de política pública
+------------------------------------
+El Estado chileno ha desplegado varios instrumentos para acelerar esta
+transición en el segmento PYME. El programa "Digitaliza tu Pyme", del
+Ministerio de Economía, Fomento y Turismo (con CORFO y SERCOTEC), define una
+estrategia de digitalización de MiPymes actualizada en 2026. A esto se suma la
+iniciativa "Hazlo con IA" -capacitación gratuita en IA generativa dirigida a
+mipymes, coordinada por los ministerios de Economía, del Trabajo y de Ciencia y
+Tecnología junto a SOFOFA, SENCE y CENIA, con apoyo de Google.org- y una
+alianza anunciada en mayo de 2026 entre CENIA y la Subsecretaría de Economía y
+Empresas de Menor Tamaño para entregar herramientas de IA generativa a PYMEs
+chilenas. En noviembre de 2025, CORFO movilizó más de 20.000 millones de pesos
+en inversión público-privada para acelerar la adopción de IA en la industria
+chilena.
+
+Fuentes:
+- "Nueva Estrategia Programa Digitaliza tu Pyme 2026", Subsecretaría de
+  Economía y Empresas de Menor Tamaño.
+  https://www.economia.gob.cl/wp-content/uploads/2026/03/100326-doc-estrategia-de-digitalizacion.pdf
+- "Pymes chilenas dan el salto a la IA con nueva alianza entre CENIA y la
+  Subsecretaría de Economía y Empresas de Menor Tamaño", CENIA, mayo de 2026.
+  https://cenia.cl/2026/05/27/pymes-chilenas-dan-el-salto-a-la-ia-con-nueva-alianza-entre-cenia-y-la-subsecretaria-de-economia-y-empresas-de-menor-tamano/
+
+7. Conclusión
+----------------
+El panorama que emerge de las fuentes revisadas es el de un segmento PYME que
+domina el tejido empresarial chileno en número de empresas y empleo (98,3% y
+cerca de la mitad del empleo formal, respectivamente) pero que aporta una
+fracción menor de las ventas totales (11,7%), reflejando una brecha de
+productividad estructural. Sobre ese punto de partida, la adopción declarada de
+IA es relativamente alta y heterogénea según la encuesta consultada (entre 15,8%
+y 83% según el estudio), con una cifra ampliamente citada de 70% para PYMEs
+según Entel Digital y CENIA (2025). No obstante, la evidencia académica y
+gremial coincide en que esa adopción es todavía mayoritariamente básica o
+exploratoria, concentrada en herramientas digitales generales más que en
+automatización de procesos con IA propiamente dicha, y que el Estado ha
+respondido con una batería creciente de programas de apoyo (Digitaliza tu Pyme,
+Hazlo con IA, instrumentos CORFO/SERCOTEC) para cerrar esa brecha.
+
+Fuentes
+-------
+1. La Tercera (2025). "Pymes en cifras: cuántas hay en Chile, cuánta venta
+   generan y en qué regiones les va mejor" (datos Banco Central, mayo 2025, y
+   SII, 2023).
+   https://www.latercera.com/tendencias/noticia/pymes-en-cifras-cuantas-hay-en-chile-cuanta-venta-generan-y-en-que-regiones-les-va-mejor/
+
+2. Entel Digital / CENIA (2025). "IA en Chile: Crece su uso en empresas, pero
+   falta capacitación digital laboral".
+   https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+
+3. Emol (23 de octubre de 2025). "Encuesta IA Defontana 2025".
+   https://www.emol.com/noticias/Economia/2025/10/23/1181305/empresas-uso-inteligencia-artificial.html
+
+4. Portal Innova (2025). "Estudio de Deloitte revela que 83% de las empresas en
+   Chile ya utiliza inteligencia artificial y 80% tiene un presupuesto
+   definido".
+   https://portalinnova.cl/estudio-de-deloitte-revela-que-83-de-las-empresas-en-chile-ya-utiliza-inteligencia-artificial-y-80-tiene-un-presupuesto-definido/
+
+5. SONDA (22 de diciembre de 2025). "SONDA Tech Trends: solo el 15,8% de las
+   empresas en Chile utiliza inteligencia artificial de forma activa".
+   https://www.sonda.com/detalle-noticia/2025/12/22/sonda-tech-trends--solo-el-15-8--de-las-empresas-en-chile-utiliza-inteligencia-artificial-de-forma-activa
+
+6. La Tercera (2025). "Radiografía del Emprendedor en Chile 2025:
+   Inteligencia Artificial, desafíos económicos y nuevas motivaciones" (Radar
+   Emprendedor, Corporación G100 y Criteria).
+   https://www.latercera.com/emprendimiento/noticia/radiografia-del-emprendedor-en-chile-2025-inteligencia-artificial-desafios-economicos-y-nuevas-motivaciones/
+
+7. Castillo-Vergara, M. (2025). "Pymes e Industria 4.0 en Chile: una brecha
+   entre la incorporación de herramientas básicas y tecnologías avanzadas".
+   Observatorio Económico, N° 202, Universidad Alberto Hurtado.
+   https://www.observatorioeconomico.cl/index.php/oe/article/view/592
+
+8. Subsecretaría de Economía y Empresas de Menor Tamaño (2026). "Nueva
+   Estrategia Programa Digitaliza tu Pyme 2026".
+   https://www.economia.gob.cl/wp-content/uploads/2026/03/100326-doc-estrategia-de-digitalizacion.pdf
+
+9. CENIA (27 de mayo de 2026). "Pymes chilenas dan el salto a la IA con nueva
+   alianza entre CENIA y la Subsecretaría de Economía y Empresas de Menor
+   Tamaño".
+   https://cenia.cl/2026/05/27/pymes-chilenas-dan-el-salto-a-la-ia-con-nueva-alianza-entre-cenia-y-la-subsecretaria-de-economia-y-empresas-de-menor-tamano/

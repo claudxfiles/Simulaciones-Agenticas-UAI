@@ -1,0 +1,192 @@
+Beneficios medibles y retorno de inversión (ROI) de la automatización con IA en PYMEs chilenas
+================================================================================================
+
+1. Introducción
+----------------
+La incorporación de inteligencia artificial (IA) y automatización de procesos en las
+pequeñas y medianas empresas (PYMEs) chilenas ha dejado de ser una promesa futurista
+para convertirse en una tendencia medible, aunque todavía desigual y en fase temprana.
+Diversos estudios de mercado, encuestas empresariales y organismos públicos y
+multilaterales han comenzado a cuantificar los efectos de esta adopción sobre la
+productividad, los costos operativos, los tiempos de respuesta y las ventas. Este
+documento reúne cifras REALES publicadas entre 2024 y 2026, distinguiendo de forma
+explícita cuáles corresponden específicamente a empresas chilenas y cuáles son datos
+regionales (América Latina) o globales que sirven como referencia comparativa, dado
+que la disponibilidad de estudios exclusivos sobre PYMEs chilenas con metodologías de
+ROI formal sigue siendo limitada. El objetivo es ofrecer una base empírica, trazable
+y sin cifras inventadas, útil para evaluar el caso de negocio de la automatización con
+agentes de IA en el segmento PYME del país.
+
+2. Adopción de IA en empresas chilenas: el punto de partida
+--------------------------------------------------------------
+Antes de hablar de beneficios y ROI es necesario situar el nivel de adopción actual,
+porque condiciona cuánto de ese potencial ya se está capturando.
+
+- Según el estudio de adopción de IA en Chile difundido por Entel Digital (2025), el
+  93% de los líderes empresariales encuestados (526 en total, a nivel nacional)
+  considera que la IA tendrá un impacto positivo en su empresa, y un 70% de las PYMEs
+  ya ha incorporado IA en alguna medida, frente a más del 80% en las grandes empresas.
+  Solo el 31% (2023) y 39% (2024) de las PYMEs contaba con un plan permanente de
+  capacitación digital, lo que evidencia una brecha entre adopción y madurez.
+  Fuente: https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+
+- La Encuesta IA Defontana 2025, aplicada a más de mil empresas de Chile y
+  Latinoamérica (con un 61% de pequeñas empresas en la muestra chilena de 154
+  compañías), encontró que el 45% ya utiliza herramientas de IA, pero solo el 23% se
+  considera plenamente preparada para integrarlas de forma sostenible.
+  Fuente: https://www.emol.com/noticias/Economia/2025/10/23/1181305/empresas-uso-inteligencia-artificial.html
+
+- El estudio Deloitte "ConvergencIA" 2025 en Chile reporta que el 83% de las empresas
+  ya utiliza IA en sus procesos y un 80% cuenta con presupuesto definido para esta
+  tecnología; la productividad aparece como la principal razón declarada para adoptar
+  IA, seguida de la reducción de costos y la satisfacción del cliente.
+  Fuente: https://portalinnova.cl/estudio-de-deloitte-revela-que-83-de-las-empresas-en-chile-ya-utiliza-inteligencia-artificial-y-80-tiene-un-presupuesto-definido/
+
+- En contraste, la encuesta SONDA Tech Trends (diciembre 2025) señala que solo el
+  15,8% de las empresas en Chile declara usar IA de forma activa, mientras un 41,7%
+  está evaluando su incorporación. La dispersión entre estas encuestas (15,8% a 83%)
+  se explica por diferencias metodológicas y por qué se entiende como "uso de IA"
+  (desde chatbots básicos hasta IA integrada en procesos críticos).
+  Fuente: https://www.sonda.com/detalle-noticia/2025/12/22/sonda-tech-trends--solo-el-15-8--de-las-empresas-en-chile-utiliza-inteligencia-artificial-de-forma-activa
+
+3. Beneficios medibles por categoría
+--------------------------------------
+
+3.1 Aumento de productividad
+Este es el beneficio más consistentemente reportado en las distintas fuentes.
+
+- Dato específico de Chile (PYMEs): según la Encuesta IA Defontana 2025 (muestra
+  mayoritariamente de pequeñas empresas chilenas), el 52% de las empresas que
+  adoptaron soluciones digitales/IA reportó mejoras de productividad, con un
+  incremento promedio del 27%. Además, el 24% optimizó su gestión de inventario, con
+  una mejora promedio del 33%, y el 54% señaló decisiones más rápidas gracias al
+  acceso a mejor información.
+  Fuente: https://www.diarioestrategia.cl/texto-diario/mostrar/5287254/50-empresas-mejora-productividad-27-digitalizarse-reduccion-costos-alcanza-23
+
+- Dato específico de Chile (a nivel de fuerza laboral, no solo PYMEs): un estudio de
+  CENIA en conjunto con investigadores de Stanford, SOFOFA Capital Humano, SENCE y el
+  Ministerio del Trabajo (diciembre 2024) analizó más de 200.000 tareas de los 100
+  empleos más comunes en Chile (cerca de 6 millones de trabajadores, 62% de la fuerza
+  laboral). Encontró que 4,7 millones de trabajadores (50% de la fuerza laboral)
+  pueden acelerar en al menos un 30% las tareas que realizan usando IA generativa, y
+  que esto podría traducirse en un aumento equivalente al 12% del PIB de Chile. En
+  promedio, un 48% de las tareas de las ocupaciones analizadas tiene potencial de
+  aceleración mediante IA generativa.
+  Fuente: https://cenia.cl/2024/12/16/50-de-la-fuerza-laboral-de-chile-puede-mejorar-significativamente-su-productividad-adoptando-la-ia-generativa/
+
+- Dato regional/global (referencia): McKinsey Global Institute estima que la IA
+  generativa podría añadir entre 2,6 y 4,4 billones de dólares (trillion en inglés)
+  anuales a la economía global a través de 63 casos de uso analizados, y que podría
+  incrementar el crecimiento de la productividad laboral entre 0,1 y 0,6 puntos
+  porcentuales anuales hasta 2040 (hasta 3,4 puntos combinada con otras tecnologías).
+  Este dato es global, no específico de Chile, pero es ampliamente citado como marco
+  de referencia por analistas y medios chilenos.
+  Fuente: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+
+3.2 Reducción de costos operativos y tiempos de respuesta
+- Dato específico de Chile (PYMEs): la misma Encuesta IA Defontana 2025 reporta un
+  ahorro de costos del 23% y una reducción del 25% en los tiempos de respuesta
+  vinculados a la agilidad en la toma de decisiones, entre las empresas que
+  implementaron IA/digitalización. Solo un 16% de las empresas encuestadas señaló
+  explícitamente reducción de costos operativos como resultado directo, lo que sugiere
+  que el beneficio de costos aún no es percibido de forma homogénea.
+  Fuente: https://www.diarioestrategia.cl/texto-diario/mostrar/5287254/50-empresas-mejora-productividad-27-digitalizarse-reduccion-costos-alcanza-23
+
+- Dato regional/global (referencia): en la Encuesta Global de Inversionistas 2025 de
+  PwC, la reducción de costos (64%) y la agilidad operativa (54%) figuran entre los
+  principales objetivos que los inversionistas esperan lograr mediante IA en las
+  empresas de su portafolio. No es un dato chileno ni específico de PYMEs, pero
+  refleja la lógica de negocio que también aplican consultoras que operan en Chile
+  (PwC Chile difunde este mismo estudio global).
+  Fuente: https://www.pwc.com/cl/es/Publicaciones/encuesta-global-de-inversionistas.html
+
+3.3 Brecha de adopción entre grandes empresas y PYMEs (relevante para el ROI esperado)
+- Dato regional (CEPAL): en Brasil, el 41% de las firmas de mayor tamaño utiliza IA,
+  frente a solo un 11% de las PYMEs, una brecha que la CEPAL advierte puede profundizar
+  la heterogeneidad estructural productiva de la región. La CEPAL también estima que
+  un crecimiento del 1% en el gasto en IA se asocia a un incremento del 0,036% en el
+  PIB regional, a través de su efecto en la productividad del trabajo calificado. Este
+  dato es regional (no específico de Chile), pero la propia CEPAL destaca a Chile como
+  el país de la región con mayor gasto proporcional en IA y con mejores niveles de
+  educación terciaria para aprovecharla.
+  Fuente: https://www.cepal.org/es/notas/segun-la-cepal-la-inteligencia-artificial-ya-impulsa-la-productividad-america-latina-caribe
+
+- Dato específico de Chile: el estudio Entel Digital (2025) confirma que, dentro del
+  país, persiste una brecha entre grandes empresas y PYMEs en el acceso a soporte
+  especializado: un 73% de las grandes empresas recibió asesoría en ciberseguridad al
+  adoptar IA, frente a solo un 28% de las PYMEs, lo que puede limitar la captura
+  efectiva del retorno de la inversión en el segmento PYME.
+  Fuente: https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+
+3.4 Apoyo público como palanca de ROI para PYMEs
+- Dato específico de Chile: el programa "Digitaliza tu Pyme", impulsado por el
+  Ministerio de Economía junto a CORFO y SERCOTEC, entregó entre 2021 y 2024 más de
+  500.000 beneficios a aproximadamente 100.000 PYMEs (considerando beneficios
+  repetidos por empresa), con el objetivo declarado de ayudar a las empresas de menor
+  tamaño a aumentar ventas, bajar costos y mejorar su relación con clientes y
+  proveedores mediante tecnología. Un documento de estrategia 2026 del propio
+  Ministerio reconoce, sin embargo, que el programa ha operado mayoritariamente como
+  una suma de apoyos puntuales, sin una ruta integrada de digitalización, lo que limita
+  la posibilidad de sostener mejoras de productividad en el tiempo.
+  Fuente: https://www.economia.gob.cl/wp-content/uploads/2026/04/150426-documento-digitaliza-tu-pyme-2026.pdf
+
+- Dato específico de Chile: en 2026, CORFO y SERCOTEC, junto a CENIA y la
+  Subsecretaría de Economía y Empresas de Menor Tamaño, anunciaron una alianza para
+  entregar herramientas y contenidos de IA generativa a PYMEs chilenas dentro del
+  programa "Digitaliza tu Pyme 2026" (iniciativa "Hazlo con IA"), orientada
+  explícitamente a impulsar productividad y modernización empresarial.
+  Fuente: https://cenia.cl/2026/05/27/pymes-chilenas-dan-el-salto-a-la-ia-con-nueva-alianza-entre-cenia-y-la-subsecretaria-de-economia-y-empresas-de-menor-tamano/
+
+- Adicionalmente, CORFO movilizó en noviembre de 2025 más de 20.000 millones de pesos
+  chilenos en inversión público-privada para acelerar la adopción de IA en la
+  industria chilena, y aportó 11.000 millones de pesos a cuatro proyectos privados de
+  impulso a la IA, aunque estas cifras corresponden a montos de inversión y no a
+  retornos medidos directamente sobre PYMEs.
+  Fuente: https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2025/11/12/corfo-aporta-11-mil-millones-a-cuatro-proyectos-de-privados-para-que-impulsen-inteligencia-artificial.shtml
+
+4. Lectura crítica: heterogeneidad de las cifras
+---------------------------------------------------
+Es importante notar que las distintas encuestas sobre adopción de IA en Chile arrojan
+resultados dispares (desde 15,8% según SONDA hasta 83% según Deloitte, pasando por 45%
+en Defontana y 70% de PYMEs según Entel Digital). Esta dispersión no invalida los
+datos, pero exige leerlos con cautela: cada encuesta usa muestras, definiciones de "uso
+de IA" y momentos de medición distintos. Asimismo, ningún estudio identificado ofrece
+todavía una metodología de "ROI financiero" estandarizada y auditada específicamente
+para PYMEs chilenas (por ejemplo, retorno en pesos por peso invertido); las cifras
+disponibles son principalmente de productividad percibida, ahorro de tiempo/costos
+autorreportado y adopción, no de retorno financiero certificado. Esta es, de hecho, una
+brecha de información relevante para justificar investigación adicional (como un
+proyecto de agente RAG) sobre el tema.
+
+5. Conclusión
+--------------
+La evidencia disponible —mayoritariamente encuestas de consultoras (Deloitte, PwC,
+Defontana), estudios de organismos públicos y centros académicos (CENIA/Stanford,
+CEPAL) y reportes de medios especializados— muestra que la automatización con IA en
+PYMEs chilenas ya genera beneficios medibles, aunque de forma desigual y todavía
+incipiente. Los datos específicos de Chile más citables son: 70% de adopción declarada
+en PYMEs (Entel Digital, 2025), mejoras de productividad promedio de 27% y ahorro de
+costos de 23% entre empresas chilenas mayoritariamente pequeñas que adoptaron
+IA/digitalización (Defontana, 2025), y un potencial de hasta 12% del PIB nacional si se
+aprovecha plenamente la IA generativa en las tareas más comunes de la fuerza laboral
+(CENIA/Stanford, 2024). A nivel regional y global, CEPAL y McKinsey ofrecen marcos de
+referencia que respaldan la tendencia, aunque no sustituyen la necesidad de datos
+propios del ecosistema PYME chileno. El principal desafío pendiente no es demostrar que
+la IA genera beneficios —la evidencia ya lo sugiere consistentemente— sino cerrar la
+brecha de madurez, capacitación y medición formal de ROI que hoy limita a las PYMEs
+chilenas para capturar ese potencial de manera sostenida.
+
+Fuentes
+--------
+1. https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+2. https://www.emol.com/noticias/Economia/2025/10/23/1181305/empresas-uso-inteligencia-artificial.html
+3. https://portalinnova.cl/estudio-de-deloitte-revela-que-83-de-las-empresas-en-chile-ya-utiliza-inteligencia-artificial-y-80-tiene-un-presupuesto-definido/
+4. https://www.sonda.com/detalle-noticia/2025/12/22/sonda-tech-trends--solo-el-15-8--de-las-empresas-en-chile-utiliza-inteligencia-artificial-de-forma-activa
+5. https://www.diarioestrategia.cl/texto-diario/mostrar/5287254/50-empresas-mejora-productividad-27-digitalizarse-reduccion-costos-alcanza-23
+6. https://cenia.cl/2024/12/16/50-de-la-fuerza-laboral-de-chile-puede-mejorar-significativamente-su-productividad-adoptando-la-ia-generativa/
+7. https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier
+8. https://www.pwc.com/cl/es/Publicaciones/encuesta-global-de-inversionistas.html
+9. https://www.cepal.org/es/notas/segun-la-cepal-la-inteligencia-artificial-ya-impulsa-la-productividad-america-latina-caribe
+10. https://www.economia.gob.cl/wp-content/uploads/2026/04/150426-documento-digitaliza-tu-pyme-2026.pdf
+11. https://cenia.cl/2026/05/27/pymes-chilenas-dan-el-salto-a-la-ia-con-nueva-alianza-entre-cenia-y-la-subsecretaria-de-economia-y-empresas-de-menor-tamano/
+12. https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2025/11/12/corfo-aporta-11-mil-millones-a-cuatro-proyectos-de-privados-para-que-impulsen-inteligencia-artificial.shtml

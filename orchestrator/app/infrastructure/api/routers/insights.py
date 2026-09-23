@@ -3,12 +3,13 @@ indexados en el RAG y trazabilidad reciente (pestañas Documentos/Trazabilidad
 de la SPA)."""
 from collections import Counter
 
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Depends, Query
 
+from app.infrastructure.api.auth import require_auth
 from app.infrastructure.persistence.trace_store import recent_interactions
 from app.infrastructure.rag.retriever import get_collection
 
-router = APIRouter(prefix="/api", tags=["insights"])
+router = APIRouter(prefix="/api", tags=["insights"], dependencies=[Depends(require_auth)])
 
 
 @router.get("/docs")

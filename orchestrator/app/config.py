@@ -46,6 +46,11 @@ class Settings(BaseSettings):
     # Trazabilidad (paso 07)
     trace_db_url: str = "sqlite:///./data/interactions.db"
 
+    # Auth (Supabase) — protege /api/agent e /api/insights
+    supabase_url: str = ""
+    supabase_anon_key: str = ""
+    allowed_email: str = ""
+
 
 @lru_cache
 def get_settings() -> Settings:

@@ -1,9 +1,15 @@
 FROM node:20-slim AS build
+ARG SUPABASE_URL
+ARG SUPABASE_ANON
+ARG EMAIL_DOMAIN=devsim.draenor.online
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm install
 COPY . .
+RUN sed -i "s|__SUPABASE_URL__|${SUPABASE_URL}|; s|__SUPABASE_ANON__|${SUPABASE_ANON}|" src/supabase-config.js && \
+    sed -i "s|__SUPABASE_URL__|${SUPABASE_URL}|; s|__SUPABASE_ANON__|${SUPABASE_ANON}|; s|__EMAIL_DOMAIN__|${EMAIL_DOMAIN}|" login.html
 RUN npm run build
+RUN cp login.html dist/login.html
 
 FROM nginx:1.27-alpine
 COPY --from=build /app/dist /usr/share/nginx/html

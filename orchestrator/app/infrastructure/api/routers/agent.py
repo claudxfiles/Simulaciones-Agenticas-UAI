@@ -1,9 +1,10 @@
 """Endpoints del agente."""
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Depends, Request
 
 from app.domain.models import InvokeRequest, InvokeResponse
+from app.infrastructure.api.auth import require_auth
 
-router = APIRouter(prefix="/api/agent", tags=["agent"])
+router = APIRouter(prefix="/api/agent", tags=["agent"], dependencies=[Depends(require_auth)])
 
 
 @router.post("/invoke", response_model=InvokeResponse)

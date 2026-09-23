@@ -1,0 +1,51 @@
+version: "3.7"
+services:
+  orchestrator:
+    image: devsim-orchestrator:1786576689
+    env_file: /home/souldream/stacks/devsim/orchestrator/.env
+    volumes:
+      - devsim_chroma:/srv/chroma_data
+      - devsim_trace:/srv/data
+    networks:
+      - SouldreamNet
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 768M
+
+  frontend:
+    image: devsim-frontend:1786579925
+    networks:
+      - SouldreamNet
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.devsim.rule=Host(`devsim.draenor.online`)
+        - traefik.http.services.devsim.loadBalancer.server.port=80
+        - traefik.http.routers.devsim.service=devsim
+        - traefik.http.routers.devsim.entrypoints=websecure
+        - traefik.http.routers.devsim.tls.certresolver=letsencryptresolver
+
+networks:
+  SouldreamNet:
+    external: true
+    name: SouldreamNet
+
+volumes:
+  devsim_chroma:
+  devsim_trace:

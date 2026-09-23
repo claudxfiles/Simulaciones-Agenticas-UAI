@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — SOULDREAM Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #000; --surface: #0a0a0a; --surface-2: #111; --border: #1a1a1a;
+    --text: #fff; --accent-orange: #ff6b1a; --red: #e35050;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    min-height: 100vh; background: var(--bg); color: var(--text);
+    font-family: 'Outfit', sans-serif; display: flex; align-items: center; justify-content: center;
+  }
+  .login-box {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 32px; width: 320px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .login-box h1 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .login-box input {
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); font-family: 'Outfit', sans-serif; font-size: 13px; padding: 10px 12px;
+  }
+  .login-box input:focus { outline: none; border-color: var(--accent-orange); }
+  .login-box button {
+    background: var(--accent-orange); border: none; border-radius: 8px; color: #000;
+    font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 13px; padding: 10px 12px;
+    cursor: pointer;
+  }
+  .login-box button:disabled { opacity: 0.5; cursor: default; }
+  .login-error { color: var(--red); font-size: 12px; min-height: 14px; }
+</style>
+</head>
+<body>
+  <form class="login-box" id="login-form">
+    <h1>SOULDREAM Agent — Login</h1>
+    <input type="text" id="email" placeholder="usuario" autocomplete="username" required>
+    <input type="password" id="password" placeholder="contraseña" autocomplete="current-password" required>
+    <div class="login-error" id="login-error"></div>
+    <button type="submit" id="login-btn">Entrar</button>
+  </form>
+  <script type="module">
+    import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+
+    const SUPABASE_URL = '__SUPABASE_URL__'
+    const SUPABASE_ANON = '__SUPABASE_ANON__'
+    const EMAIL_DOMAIN = '__EMAIL_DOMAIN__'
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON)
+    const form = document.getElementById('login-form')
+    const errorEl = document.getElementById('login-error')
+    const btn = document.getElementById('login-btn')
+
+    supabase.auth.getSession().then(({ data }) => {
+      if (data.session) window.location.href = '/'
+    })
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      errorEl.textContent = ''
+      btn.disabled = true
+      const raw = document.getElementById('email').value.trim()
+      const email = raw.includes('@') ? raw : `${raw}@${EMAIL_DOMAIN}`
+      const password = document.getElementById('password').value
+      const { error } = await supabase.auth.signInWithPassword({ email, password })
+      btn.disabled = false
+      if (error) {
+        errorEl.textContent = 'Usuario o contraseña incorrectos'
+        return
+      }
+      window.location.href = '/'
+    })
+  </script>
+</body>
+</html>
